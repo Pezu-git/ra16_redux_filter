@@ -1,4 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit';
-import serviceList from '../reducers/SliceServiceList';
+import { configureStore } from "@reduxjs/toolkit";
+import serviceAdd from "../reducers/serviceAdd";
+import serviceFilter from "../reducers/serviceFilter";
+import serviceList from "../reducers/serviceList";
 
-export default configureStore({ reducer: { serviceList } });
+
+const store = configureStore({
+  reducer: {
+    serviceList,
+    serviceAdd,
+    serviceFilter
+  }
+})
+
+export default store

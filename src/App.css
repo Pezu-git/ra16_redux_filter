@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 html,
 body {
   font-family: Open Sans, arial, sans-serif;
@@ -27,6 +28,10 @@ li {
   height: 100%;
   /* border: solid black 1px; */
   /* border-radius: 50px; */
+}
+.List {
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -68,7 +73,8 @@ li {
   /* margin-right: 1vmin; */
 }
 
-.new-post-input {
+.new-post-input,
+.filter-input {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -81,6 +87,10 @@ li {
   justify-content: flex-end;
 
   padding: 0 0.5vmin;
+}
+.input-holder {
+  margin: 10px;
+  width: 90%;
 }
 
 /* ! LEGACY */
